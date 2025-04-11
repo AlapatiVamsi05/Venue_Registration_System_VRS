@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Venue Registration System</title>
-    <link rel="stylesheet" href="/test/frontend/stylenav.css">
-    <link rel="stylesheet" href="/test/frontend/stylefooter.css">
+    <link rel="stylesheet" href="/Venue_Registration_System_VRS/frontend/stylenav.css">
+    <link rel="stylesheet" href="/Venue_Registration_System_VRS/frontend/stylefooter.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -77,16 +77,16 @@
 <body>
     <nav>
         <div class="nav-left">
-            <img src="/test/assets/logo.png" alt="Logo">
+            <img src="/Venue_Registration_System_VRS/assets/logo.png" alt="Logo">
             <span>Venue Registration System</span>
         </div>
         <div class="nav-right">
             <ul>
-                <li><a href="/test/index.html">Home</a></li>
-                <li><a href="/test/frontend/aboutus.html">About Us</a></li>
-                <li id="loginNav"><a href="/test/frontend/login.html">Login</a></li>
-                <li><a href="/test/frontend/contactus.html">Contact Us</a></li>
-                <li><a href="/test/frontend/registrationpage.html" class="login-btn">Get venues now!</a></li>
+                <li><a href="/Venue_Registration_System_VRS/index.html">Home</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/aboutus.html">About Us</a></li>
+                <li id="loginNav"><a href="/Venue_Registration_System_VRS/frontend/login.html">Login</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/contactus.html">Contact Us</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/registrationpage.html" class="login-btn">Get venues now!</a></li>
                 <li id="logoutNav" style="display: none;"><a href="#" onclick="logoutUser()">Logout</a></li>
             </ul>
         </div>
@@ -137,10 +137,10 @@
         <div class="footer-section">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="/test/frontend/homepage.html">Home</a></li>
-                <li><a href="/test/frontend/registrationpage.html">Get Venues</a></li>
-                <li><a href="/test/frontend/aboutus.html">About Us</a></li>
-                <li><a href="/test/frontend/contactus.html">Contact Us</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/homepage.html">Home</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/registrationpage.html">Get Venues</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/aboutus.html">About Us</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/contactus.html">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-section newsletter">
@@ -151,9 +151,9 @@
         <div class="footer-section">
             <h3>Follow Us</h3>
             <ul>
-                <li><a href="/test/frontend/socialmedia.html"><i class="fab fa-facebook"></i> Facebook</a></li>
-                <li><a href="/test/frontend/socialmedia.html"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href="/test/frontend/socialmedia.html"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/socialmedia.html"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/socialmedia.html"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="/Venue_Registration_System_VRS/frontend/socialmedia.html"><i class="fab fa-twitter"></i> Twitter</a></li>
             </ul>
         </div>
     </div>
@@ -168,14 +168,14 @@
         let logoutNav = document.getElementById("logoutNav");
 
         if (user) {
-            loginNav.innerHTML = `<a href="/test/frontend/previousvenues.html">Get Booked Venues</a>`;
+            loginNav.innerHTML = `<a href="/Venue_Registration_System_VRS/frontend/previousvenues.html">Get Booked Venues</a>`;
             logoutNav.style.display = "block";
         }
     });
 
     function logoutUser() {
         localStorage.removeItem("loggedInUser");
-        window.location.href = "/test/index.html"; 
+        window.location.href = "/Venue_Registration_System_VRS/index.html"; 
     }
 </script>
 
