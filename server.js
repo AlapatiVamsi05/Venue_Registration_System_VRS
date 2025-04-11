@@ -7,7 +7,7 @@ const PORT = 5500;
 
 // If you're using MongoDB locally, this stays the same.
 // You can replace this URI with your Atlas URI if needed.
-const MONGO_URI = "mongodb://localhost:27017/";
+const MONGO_URI = "mongodb://10.10.28.109:27017/";
 
 // CORS config: Allow GitHub Pages frontend and DevTunnel access
 app.use(cors({
