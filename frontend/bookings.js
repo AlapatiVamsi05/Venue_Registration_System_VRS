@@ -1,3 +1,8 @@
+const isGithub = location.hostname.includes("github.io");
+const API_BASE = isGithub
+  ? "https://spsmkpn4-5500.inc1.devtunnels.ms"
+  : "http://localhost:5500";
+
 function getLoggedInUser() {
     return JSON.parse(localStorage.getItem("loggedInUser"));
 }
@@ -13,7 +18,7 @@ function saveBookedVenues(bookedVenues) {
 
 async function storeUserInDB(user) {
     try {
-        let response = await fetch("http://localhost:5500/register", {
+       let response = await fetch(`${API_BASE}/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
