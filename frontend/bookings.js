@@ -50,7 +50,7 @@ function registerUser(event) {
     storeUserInDB(newUser);
 
     alert("Registration successful!");
-    window.location.href = "login.html";
+    window.location.href = "/test/frontend/login.html";
 }
 
 function loginUser(event) {
@@ -65,7 +65,7 @@ function loginUser(event) {
     if (user) {
         localStorage.setItem("loggedInUser", JSON.stringify(user));
         alert("Logged in successfully!");
-        window.location.href = "previousvenues.html";
+        window.location.href = "/test/frontend/previousvenues.html";
     } else {
         alert("Invalid email or password!");
     }
