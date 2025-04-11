@@ -100,5 +100,5 @@ function bookVenue(venueName, address, capacity) {
     localStorage.setItem("bookedVenues", JSON.stringify(bookedVenues));
 
     alert("Venue booked successfully!");
-    window.location.href = "previousvenues.html";
+    window.location.href = "/test/frontend/previousvenues.html";
 }
