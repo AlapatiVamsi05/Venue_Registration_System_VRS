@@ -10,14 +10,7 @@ const PORT = 5500;
 const MONGO_URI = "mongodb://10.10.28.109:27017/";
 
 // CORS config: Allow GitHub Pages frontend and DevTunnel access
-app.use(cors({
-    origin: [
-        "https://AlapatiVamsi05.github.io", // Replace with your actual GitHub Pages URL
-        "https://spsmkpn4-5500.inc1.devtunnels.ms"
-    ],
-    methods: ["GET", "POST"],
-    credentials: false
-}));
+app.use(cors());
 
 app.use(express.json());
 
