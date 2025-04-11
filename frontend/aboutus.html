@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Venue Registration System</title>
+    <link rel="stylesheet" href="stylenav.css">
+    <link rel="stylesheet" href="stylefooter.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #2E7D32;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .team-member {
+            background: white;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+        .team-member h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #2E7D32;
+        }
+        .team-member p {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+        .contact-info {
+            margin-top: 30px;
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="../assets/logo.png" alt="Logo">
+            <span>Venue Registration System</span>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li id="loginNav"><a href="login.html">Login</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="registrationpage.html" class="login-btn">Get venues now!</a></li>
+                <li id="logoutNav" style="display: none;"><a href="#" onclick="logoutUser()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<div class="container">
+    <h2>Welcome to the Venue Registration System</h2>
+    <p>We specialize in making your event booking process <span class="highlight">easy, efficient, and hassle-free</span>. Whether it's a wedding, birthday, conference, or any special occasion, we help you find the perfect venue.</p>
+
+    <h2>Our Mission</h2>
+    <p>To provide a seamless and convenient platform for venue booking, offering the <span class="highlight">best deals and top-rated venues</span> for every occasion.</p>
+
+    <h2>Our Vision</h2>
+    <p>To become the most trusted venue booking system, ensuring every event is <span class="highlight">memorable and well-organized</span> with quality service and transparent pricing.</p>
+
+    <h2>Why Choose Us?</h2>
+    <p>✔️ Best venue deals and offers</p>
+    <p>✔️ Quick and easy booking process</p>
+    <p>✔️ Verified venues with high ratings</p>
+    <p>✔️ 24/7 customer support</p>
+
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <h3>S Lakshmi Satvika</h3>
+        </div>
+        <div class="team-member">
+            <h3>K Renuka Devi</h3>
+        </div>
+        <div class="team-member">
+            <h3>M Namratha Krishna</h3>
+        </div>
+        <div class="team-member">
+            <h3>A Sai Vamsi Krishna</h3>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> support@venuesystem.com</p>
+        <p><strong>Phone:</strong> +1 234 567 890</p>
+        <p><strong>Address:</strong> Vadlmaudi,Guntur district,Andhra Pradesh</p>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="registrationpage.html">Get Venues</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section newsletter">
+            <h3>Join Our Newsletter</h3>
+            <input type="email" placeholder="Enter your email">
+            <button onclick="window.location.href='socialmedia.html'">Subscribe</button>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="socialmedia.html"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="socialmedia.html"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="socialmedia.html"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Venue Registration System. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let user = JSON.parse(localStorage.getItem("loggedInUser"));
+        let loginNav = document.getElementById("loginNav");
+        let logoutNav = document.getElementById("logoutNav");
+
+        if (user) {
+            loginNav.innerHTML = `<a href="previousvenues.html">Get Booked Venues</a>`;
+            logoutNav.style.display = "block";
+        }
+    });
+
+    function logoutUser() {
+        localStorage.removeItem("loggedInUser");
+        window.location.href = "homepage.html"; 
+    }
+</script>
+
+<footer class="footer">
+    &copy; 2025 Venue Registration System | All Rights Reserved
+</footer>
+
+</body>
+</html>

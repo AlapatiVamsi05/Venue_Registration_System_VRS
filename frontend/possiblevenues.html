@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Venues</title>
+    <link rel="stylesheet" href="stylenav.css">
+    <link rel="stylesheet" href="stylevenues.css">
+    <link rel="stylesheet" href="stylefooter.css">
+    <script src="bookings.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="../assets/logo.png" alt="Logo">
+            <span>Venue Registration System</span>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li id="loginNav"><a href="login.html">Login</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="registrationpage.html" class="login-btn">Get venues now!</a></li>
+                <li id="logoutNav" style="display: none;"><a href="#" onclick="logoutUser()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <center>
+        <h2>Available Venues</h2>
+        <div id="userDetails" class="user-card"></div>
+        <div id="venueList" class="venue-container"></div>
+    </center>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="registrationpage.html">Get Venues</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Join Our Newsletter</h3>
+                <input type="email" placeholder="Enter your email">
+                <button onclick="window.location.href='socialmedia.html'">Subscribe</button>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="socialmedia.html"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="socialmedia.html"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="socialmedia.html"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Venue Registration System. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const venuesContainer = document.getElementById("venueList");
+            const userDetailsContainer = document.getElementById("userDetails");
+
+            const data = localStorage.getItem("venuesData");
+
+            if (!data) {
+                venuesContainer.innerHTML = "<p>No venues found.</p>";
+                return;
+            }
+
+            const parsedData = JSON.parse(data);
+            const { user, venues } = parsedData;
+
+            if (!venues || venues.length === 0) {
+                venuesContainer.innerHTML = "<p>No suitable venues found.</p>";
+                return;
+            }
+
+
+            userDetailsContainer.innerHTML = `
+                <h3>User Details</h3>
+                <p><strong>Name:</strong> ${user.user_name}</p>
+                <p><strong>Email:</strong> ${user.user_email}</p>
+                <p><strong>Event Type:</strong> ${user.event_type}</p>
+                <p><strong>Event Location:</strong> ${user.event_location}</p>
+                <p><strong>Expected Guests:</strong> ${user.expected_guests}</p>
+            `;
+
+            venuesContainer.innerHTML = venues.map(venue => `
+                <div class="venue-card">
+                    <h3>${venue.venueName}</h3>
+                    <p><strong>Location:</strong> ${venue.event_location}</p>
+                    <p><strong>Address:</strong> ${venue.address}</p>
+                    <p><strong>Capacity:</strong> ${venue.capacity}</p>
+                    <p><strong>Event Types:</strong> ${venue.event_type.join(", ")}</p>
+                    <p><strong>Rating:</strong> ⭐${venue.stars}</p>
+                    <p><strong>Contact:</strong> ${venue.contactInfo.phone}</p>
+                    <button class="pay-button" onclick="bookVenue('${venue.venueName}', '${venue.address}', '${venue.capacity}')">
+    Add this Venue to your list.
+</button>
+
+
+                </div>
+            `).join("");
+        });
+     
+    document.addEventListener("DOMContentLoaded", function () {
+        let user = JSON.parse(localStorage.getItem("loggedInUser"));
+        let loginNav = document.getElementById("loginNav");
+        let logoutNav = document.getElementById("logoutNav");
+
+        if (user) {
+            loginNav.innerHTML = `<a href="previousvenues.html">Get Booked Venues</a>`;
+            logoutNav.style.display = "block";
+        }
+    });
+
+    function logoutUser() {
+        localStorage.removeItem("loggedInUser");
+        window.location.href = "homepage.html";
+    }
+
+
+    </script>
+</body>
+</html>

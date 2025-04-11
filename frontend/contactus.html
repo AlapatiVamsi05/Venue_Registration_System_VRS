@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Venue Registration</title>
+    <link rel="stylesheet" href="stylefooter.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin: 40px auto; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        #response-message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+    <link rel="stylesheet" href="stylenav.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="../assets/logo.png" alt="Logo">
+            <span>Venue Registration System</span>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li id="loginNav"><a href="login.html">Login</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="registrationpage.html" class="login-btn">Get venues now!</a></li>
+                <li id="logoutNav" style="display: none;"><a href="#" onclick="logoutUser()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Contact Us for Venue Registration</h1>
+        <p>We are available 24/7 for your inquiries and registration requests.</p>
+    </header>
+
+
+    <div class="contact-form">
+        <form id="contact-form">
+            <label for="venue-name">Venue Name:</label>
+            <input type="text" id="venue-name" name="venue-name" required>
+
+            <label for="owner-name">Owner Name:</label>
+            <input type="text" id="owner-name" name="owner-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="response-message"></div>
+    </div>
+
+    <footer>
+        <p>We are available 24/7. You can contact us at any time!</p>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="registrationpage.html">Get Venues</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Join Our Newsletter</h3>
+                    <input type="email" placeholder="Enter your email">
+                    <button onclick="window.location.href='socialmedia.html'">Subscribe</button>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="socialmedia.html"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="socialmedia.html"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="socialmedia.html"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Venue Registration System. All rights reserved.</p>
+            </div>
+        </footer>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let user = JSON.parse(localStorage.getItem("loggedInUser"));
+            let loginNav = document.getElementById("loginNav");
+            let logoutNav = document.getElementById("logoutNav");
+    
+            if (user) {
+                loginNav.innerHTML = `<a href="previousvenues.html">Get Booked Venues</a>`;
+                logoutNav.style.display = "block";
+            }
+        });
+    
+        function logoutUser() {
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "homepage.html";
+        }
+    </script>
+    
+</body>
+</html>
+

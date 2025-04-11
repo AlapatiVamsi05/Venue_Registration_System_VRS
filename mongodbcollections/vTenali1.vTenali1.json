@@ -1,0 +1,148 @@
+[{
+  "_id": {
+    "$oid": "67b566757a0369b0458f22f8"
+  },
+  "venueName": "Sri Navodaya Function Hall",
+  "address": "Guntur Road, Sulthanabad, Tenali, Andhra Pradesh 522202",
+  "place": "Tenali",
+  "contactInfo": {
+    "phone": "9700275111"
+  },
+  "capacity": 400,
+  "event_type": [
+    "wedding",
+    "engagement",
+    "corporate",
+    "conference"
+  ],
+  "stars": "3.9"
+},
+{
+  "_id": {
+    "$oid": "67b485147dc7c477e4d1268f"
+  },
+  "venueName": "Goutham Grand Hotel",
+  "address": "D.No: 8-19-110, Railway Station Road, Morrispet, Tenali - 522202, Guntur(Dist), Andhra PradeshP",
+  "place": "Tenali",
+  "contactInfo": {
+    "phone": "7660000695",
+    "email": "reserv@gouthamhotels.com"
+  },
+  "capacity": 1000,
+  "event_type": [
+    "engagement",
+    "wedding",
+    "birthday",
+    "corporate",
+    "conference"
+  ],
+  "stars": "4"
+},
+{
+  "_id": {
+    "$oid": "67b56bc37a0369b0458f22fe"
+  },
+  "venueName": "Sasi Vedika",
+  "address": "6JRX+X3Q, Ganganamma Peta, Ramalingeswara Pet, Tenali, Andhra Pradesh 522201",
+  "place": "Tenali",
+  "contactInfo": {
+    "phone": "7093313344"
+  },
+  "capacity": 200,
+  "event_type": [
+    "birthday",
+    "kitty",
+    "conference"
+  ],
+  "stars": "3.9"
+},
+{
+  "_id": {
+    "$oid": "67b56e147a0369b0458f2301"
+  },
+  "venueName": "Chavas Grand Function Hall",
+  "address": "6JWJ+PX7, Sulthanabad, Tenali, Andhra Pradesh 522201",
+  "place": "Tenali",
+  "contactInfo": {
+    "phone": "9866554055",
+    "email": "info@chavasgrand.com"
+  },
+  "capacity": 400,
+  "event_type": [
+    "wedding",
+    "engagement",
+    "conference"
+  ],
+  "stars": "4.2"
+},
+{
+  "_id": {
+    "$oid": "67b56ee87a0369b0458f2304"
+  },
+  "venueName": "Ratna Fortune Convention Hall",
+  "address": "Alapati Nagar, 32-8-4/c, Sulthanabad, Tenali, Andhra Pradesh 522202",
+  "stars": "4.2",
+  "place": "Tenali",
+  "contactInfo": {
+    "mobile": "8121212449"
+  },
+  "capacity": 500,
+  "event_type": [
+    "wedding",
+    "engagement",
+    "corporate",
+    "conference"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b5738d54051027c6ceb103"
+  },
+  "venueName": "Sri Padmavathi Kalyana Mandapam",
+  "address": "Ponduranga Pet, Tenali, Andhra Pradesh 522201",
+  "place": "Tenali",
+  "contactInfo": {
+    "phone": "9959427496"
+  },
+  "capacity": 300,
+  "event_type": [
+    "wedding",
+    "engagement"
+  ],
+  "stars": "4.2"
+},
+{
+  "_id": {
+    "$oid": "67b574df54051027c6ceb105"
+  },
+  "venueName": "Biryanis and More",
+  "address": "Bose Rd, opp. Town Church, Ramalingeswara Pet, Tenali, Andhra Pradesh 522201",
+  "place": "Tenali",
+  "contactInfo": {
+    "phone": "9069041234",
+    "email": "info@biryanis.com"
+  },
+  "capacity": 20,
+  "event_type": [
+    "birthday"
+  ],
+  "stars": "3.7"
+},
+{
+  "_id": {
+    "$oid": "67c8db60e30b7199c07faa12"
+  },
+  "venueName": "Grand Adithee Rooms and banquets",
+  "address": "6MP2+5HQ, opp. Axis bank, Kothapet, Kothapeta, Tenali, Andhra Pradesh 522201",
+  "place": "Tenali",
+  "contactInfo": {
+    "phone": "7093313344"
+  },
+  "capacity": 200,
+  "event_type": [
+    "birthday",
+    "kitty",
+    "conference"
+  ],
+  "stars": "4.2"
+}]

@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "67edd066a1a04acf1a20a6e0"
+  },
+  "venueName": "Fortune Murali Park",
+  "address": "40-1-28, MG Road, Labbipet, Vijayawada, Andhra Pradesh",
+  "stars": 4.5,
+  "place": "Vijayawada",
+  "contactInfo": {
+    "phone": "78906754678"
+  },
+  "capacity": 400,
+  "event_type": [
+    "wedding",
+    "corporate",
+    "conference",
+    "engagement"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67edd066a1a04acf1a20a6e1"
+  },
+  "venueName": "Ayla Event Space & Gardens",
+  "address": "Kanuru, Vijayawada, Andhra Pradesh",
+  "stars": 3.9,
+  "place": "Vijayawada",
+  "contactInfo": {
+    "phone": "7860578905"
+  },
+  "capacity": 600,
+  "event_type": [
+    "wedding",
+    "corporate",
+    "conference",
+    "birthday"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67edd066a1a04acf1a20a6e2"
+  },
+  "venueName": "Hotel Southern Grand",
+  "address": "29-6-9, Eluru Rd, Governorpet, Vijayawada, Andhra Pradesh",
+  "stars": 4,
+  "place": "Vijayawada",
+  "contactInfo": {
+    "phone": "8342156798"
+  },
+  "capacity": 200,
+  "event_type": [
+    "birthday",
+    "kitty party",
+    "corporate",
+    "conference"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67edd066a1a04acf1a20a6e3"
+  },
+  "venueName": "The Gateway Hotel MG Road",
+  "address": "39-1-63, MG Road, Labbipet, Vijayawada, Andhra Pradesh",
+  "stars": 4.4,
+  "place": "Vijayawada",
+  "contactInfo": {
+    "phone": "9878905643"
+  },
+  "capacity": 500,
+  "event_type": [
+    "wedding",
+    "corporate",
+    "conference",
+    "engagement"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67edd066a1a04acf1a20a6e4"
+  },
+  "venueName": "Ilapuram Hotel",
+  "address": "40-1-73, Benz Circle, MG Road, Vijayawada, Andhra Pradesh",
+  "stars": 4.1,
+  "place": "Vijayawada",
+  "contactInfo": {
+    "phone": "7675423456"
+  },
+  "capacity": 300,
+  "event_type": [
+    "wedding",
+    "corporate",
+    "conference",
+    "birthday"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67edd066a1a04acf1a20a6e5"
+  },
+  "venueName": "Hotel Marg Krishnaaya",
+  "address": "40-1-47, MG Road, Labbipet, Vijayawada, Andhra Pradesh",
+  "stars": 4,
+  "place": "Vijayawada",
+  "contactInfo": {
+    "phone": "8789087809"
+  },
+  "capacity": 250,
+  "event_type": [
+    "wedding",
+    "corporate",
+    "conference",
+    "engagement"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67edd066a1a04acf1a20a6e6"
+  },
+  "venueName": "Hotel Aira",
+  "address": "40-1-100, MG Road, Labbipet, Vijayawada, Andhra Pradesh",
+  "stars": 4.2,
+  "place": "Vijayawada",
+  "contactInfo": {
+    "phone": "8790645621"
+  },
+  "capacity": 150,
+  "event_type": [
+    "corporate",
+    "conference"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67edd066a1a04acf1a20a6e7"
+  },
+  "venueName": "DV Manor",
+  "address": "40-1-47, MG Road, Labbipet, Vijayawada, Andhra Pradesh",
+  "stars": 4.3,
+  "place": "Vijayawada",
+  "contactInfo": {
+    "phone": "7672043402"
+  },
+  "capacity": 350,
+  "event_type": [
+    "wedding",
+    "corporate",
+    "conference",
+    "birthday"
+  ]
+}]
