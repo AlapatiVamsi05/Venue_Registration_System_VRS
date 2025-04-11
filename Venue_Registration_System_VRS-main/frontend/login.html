@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="bookings.js"></script>
+    <link rel="stylesheet" href="stylenav.css">
+    <link rel="stylesheet" href="stylefooter.css">
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="../assets/logo.png" alt="Logo">
+            <span>Venue Registration System</span>
+        </div>
+    
+        <div class="nav-right">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li id="loginNav"><a href="login.html">Login</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="registrationpage.html" class="login-btn">Get venues now!</a></li>
+                <li id="logoutNav" style="display: none;"><a href="#" onclick="logoutUser()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Login</h2>
+    <form onsubmit="loginUser(event)">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="loginpage.html">Sign up here</a></p>
+    
+    <div id="venueList"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="registrationpage.html">Get Venues</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Join Our Newsletter</h3>
+                <input type="email" placeholder="Enter your email">
+                <button onclick="window.location.href='socialmedia.html'">Subscribe</button>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="socialmedia.html"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="socialmedia.html"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="socialmedia.html"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Venue Registration System. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function loginUser(event) {
+    event.preventDefault(); 
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    let user = users.find(user => user.email === email && user.password === password);
+
+    if (user) {
+        localStorage.setItem("loggedInUser", JSON.stringify(user));
+        alert("Logged in successful!");
+        window.location.href = "previousvenues.html";
+    } else {
+        alert("Invalid email or password! Are you sure you have an account? and this are your correct details?");
+    }
+}
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let user = JSON.parse(localStorage.getItem("loggedInUser"));
+        let loginNav = document.getElementById("loginNav");
+        let logoutNav = document.getElementById("logoutNav");
+
+        if (user) {
+            loginNav.innerHTML = `<a href="previousvenues.html">Get Booked Venues</a>`;
+            logoutNav.style.display = "block";
+        }
+    });
+
+    function logoutUser() {
+        localStorage.removeItem("loggedInUser");
+        window.location.href = "homepage.html"; 
+    }
+
+
+
+    </script>
+</body>
+</html>

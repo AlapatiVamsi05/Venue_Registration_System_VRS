@@ -1,0 +1,149 @@
+[{
+  "_id": {
+    "$oid": "67edcfc5a1a04acf1a20a6d1"
+  },
+  "venueName": "Siddhartha Gardens & Convention Center",
+  "address": "4-18, 28/72, Ring Road, Chandramouli Nagar, Guntur, Andhra Pradesh 522006",
+  "stars": 4.5,
+  "place": "Guntur",
+  "contactInfo": {
+    "phone": "9866599955"
+  },
+  "capacity": 1000,
+  "event_type": [
+    "wedding",
+    "corporate",
+    "conference",
+    "engagement"
+  ],
+  "event_location": "Guntur"
+},
+{
+  "_id": {
+    "$oid": "67edcfc5a1a04acf1a20a6d2"
+  },
+  "venueName": "B Convention Center",
+  "address": "Near Andhra Muslim College, Guntur, Andhra Pradesh 522003",
+  "stars": 4.5,
+  "place": "Guntur",
+  "contactInfo": {
+    "phone": "9246485282"
+  },
+  "capacity": 330,
+  "event_type": [
+    "wedding",
+    "engagement",
+    "conference"
+  ],
+  "event_location": "Guntur"
+},
+{
+  "_id": {
+    "$oid": "67edcfc5a1a04acf1a20a6d3"
+  },
+  "venueName": "The Orchid Banquet Hall",
+  "address": "Brodipet, Guntur, Andhra Pradesh 522002",
+  "stars": 4.2,
+  "place": "Guntur",
+  "contactInfo": {
+    "phone": "7673403241"
+  },
+  "capacity": 120,
+  "event_type": [
+    "birthday",
+    "kitty party"
+  ],
+  "event_location": "Guntur"
+},
+{
+  "_id": {
+    "$oid": "67edcfc5a1a04acf1a20a6d4"
+  },
+  "venueName": "Blue Leaf Restaurant Party Hall",
+  "address": "Lakshmipuram, Guntur, Andhra Pradesh 522007",
+  "stars": 4,
+  "place": "Guntur",
+  "contactInfo": {
+    "phone": "9392988777"
+  },
+  "capacity": 80,
+  "event_type": [
+    "birthday",
+    "kitty party"
+  ],
+  "event_location": "Guntur"
+},
+{
+  "_id": {
+    "$oid": "67edcfc5a1a04acf1a20a6d5"
+  },
+  "venueName": "Hotel Grand Nagarjuna Banquet Hall",
+  "address": "Arundelpet, Guntur, Andhra Pradesh 522002",
+  "stars": 4.1,
+  "place": "Guntur",
+  "contactInfo": {
+    "phone": "9398668939"
+  },
+  "capacity": 150,
+  "event_type": [
+    "corporate",
+    "conference",
+    "birthday"
+  ],
+  "event_location": "Guntur"
+},
+{
+  "_id": {
+    "$oid": "67edcfc5a1a04acf1a20a6d6"
+  },
+  "venueName": "PVR Grand Function Hall",
+  "address": "Sampath Nagar, Guntur, Andhra Pradesh 522004",
+  "stars": 4.3,
+  "place": "Guntur",
+  "contactInfo": {
+    "phone": "7678098923"
+  },
+  "capacity": 500,
+  "event_type": [
+    "wedding",
+    "engagement",
+    "conference"
+  ],
+  "event_location": "Guntur"
+},
+{
+  "_id": {
+    "$oid": "67edcfc5a1a04acf1a20a6d7"
+  },
+  "venueName": "Lotus Party Hall",
+  "address": "Krishna Nagar, Guntur, Andhra Pradesh 522006",
+  "stars": 4,
+  "place": "Guntur",
+  "contactInfo": {
+    "phone": "8985678912"
+  },
+  "capacity": 60,
+  "event_type": [
+    "birthday",
+    "kitty party"
+  ],
+  "event_location": "Guntur"
+},
+{
+  "_id": {
+    "$oid": "67edcfc5a1a04acf1a20a6d8"
+  },
+  "venueName": "Club One Party Lounge",
+  "address": "Lakshmipuram, Guntur, Andhra Pradesh 522007",
+  "stars": 4.2,
+  "place": "Guntur",
+  "contactInfo": {
+    "phone": "7674352349"
+  },
+  "capacity": 50,
+  "event_type": [
+    "birthday",
+    "kitty party"
+  ],
+  "event_location": "Guntur"
+}]
