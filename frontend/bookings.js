@@ -55,7 +55,7 @@ function registerUser(event) {
     storeUserInDB(newUser);
 
     alert("Registration successful!");
-    window.location.href = "/test/frontend/login.html";
+    window.location.href = "/Venue_Registration_System_VRS/frontend/login.html";
 }
 
 function loginUser(event) {
@@ -70,7 +70,7 @@ function loginUser(event) {
     if (user) {
         localStorage.setItem("loggedInUser", JSON.stringify(user));
         alert("Logged in successfully!");
-        window.location.href = "/test/frontend/previousvenues.html";
+        window.location.href = "/Venue_Registration_System_VRS/frontend/previousvenues.html";
     } else {
         alert("Invalid email or password!");
     }
@@ -100,5 +100,5 @@ function bookVenue(venueName, address, capacity) {
     localStorage.setItem("bookedVenues", JSON.stringify(bookedVenues));
 
     alert("Venue booked successfully!");
-    window.location.href = "/test/frontend/previousvenues.html";
+    window.location.href = "/Venue_Registration_System_VRS/frontend/previousvenues.html";
 }
