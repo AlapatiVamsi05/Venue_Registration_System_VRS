@@ -85,7 +85,11 @@ To use VRS on your system, make sure you have the following:
 We’ve deployed a mini version of the Venue Registration System!  
 Just click the link below to start using it:
 
-🔗 [VenueRegistrationSystem1](https://alapativamsi05.github.io/VenueRegistrationSystem1/)
+🔗 [Mini Version](https://alapativamsi05.github.io/VenueRegistrationSystem1/)
+
+There's also a live version of this project, but currently it only works when one of the development team is running the server:
+
+🔗[Live Version](https://alapativamsi05.github.io/Venue_Registration_System_VRS/)
 
 ---
 
