@@ -89,7 +89,11 @@ Just click the link below to start using it:
 
 There's also a live version of this project, but currently it only works when one of the development team is running the server:
 
-🔗[Live Version](https://alapativamsi05.github.io/Venue_Registration_System_VRS/)
+🔗 [Live Version](https://alapativamsi05.github.io/Venue_Registration_System_VRS/)
+
+The server's dev tunnel link is:
+
+🔗 [Dev Tunnel link](https://spsmkpn4-5500.inc1.devtunnels.ms/)
 
 ---
 
